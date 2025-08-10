@@ -1,0 +1,5 @@
+requests
+fastapi[all]
+openai
+pip-tools
+ipython
