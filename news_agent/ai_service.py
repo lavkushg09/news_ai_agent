@@ -101,8 +101,6 @@ def run_news_agent(country="us", category="business", limit=5):
     )
     time.sleep(20)
     for tool_call in completion.choices[0].message.tool_calls:
-        print("=====================================")
-        print("=====================================",completion.choices[0].message)
         name = tool_call.function.name
         args = json.loads(tool_call.function.arguments)
         messages.append(completion.choices[0].message)
